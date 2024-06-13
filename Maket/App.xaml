@@ -1,0 +1,22 @@
+﻿<Application x:Class="Maket.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Dark.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesign2.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.Orange.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Secondary/MaterialDesignColor.Orange.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <!-- Пользовательские ресурсы цветов -->
+            <Color x:Key="PrimaryColor">#FF6A00</Color>
+            <Color x:Key="PrimaryDarkColor">#333333</Color>
+            <Color x:Key="PrimaryLightColor">#FFFFFF</Color>
+            <SolidColorBrush x:Key="PrimaryHueMidBrush" Color="{StaticResource PrimaryColor}"/>
+            <SolidColorBrush x:Key="PrimaryHueDarkBrush" Color="{StaticResource PrimaryDarkColor}"/>
+            <SolidColorBrush x:Key="PrimaryHueLightBrush" Color="{StaticResource PrimaryLightColor}"/>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
